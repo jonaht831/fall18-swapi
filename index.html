@@ -6,24 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SWAPI</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- MOUNTING POINT -->
   <div id="app">
     <div class="categories">
-      categories go here
+      <button class="btn btn-success" onclick="app.controllers.charactersController.getCharacters()">Characters</button>
+      <button class="btn btn-danger" onclick="app.controllers.starShipsController.getStarShips()">StarShips</button>
+      <button class="btn btn-primary" onclick="app.controllers.planetsController.getPlanets()">Planets</button>
     </div>
 
     <div class="active-category">
-
-      <div id="category-title" class="category-title">Active Category</div>
-      <div id="category-description" class="category-description">Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Atque optio unde nisi
-        architecto ipsam quam blanditiis cupiditate veniam, officiis earum consequuntur iusto ipsum maxime quisquam
-        inventore provident saepe fugit est.</div>
+      <div id="category-title" class="category-title"></div>
+      <div id="category-description" class="category-description"></div>
       <div id="category-actions" class="category-actions">
-        prev and next buttons here
+
       </div>
       <div id="category-data" class="category-data">
       </div>
